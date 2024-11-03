@@ -11,9 +11,9 @@ def convert_file(lang):
     tree = ET.fromstring(xml)
     notags = ET.tostring(tree, encoding='utf8', method='text')
     # print(notags.decode()[:100])
-    with open("udhr-data-text-only/udhr_" + lang + ".txt", "w") as f:
+    with open("udhr_" + lang + ".txt", "w") as f:
         f.write(notags.decode())
     return xml
 
-for lang in ["arb", "wol", "snk", "fuf", "zgh", "tzm"]:
+for lang in ["arb", "wol", "snk", "fuf", "zgh", "tzm", "bam"]:
     convert_file(lang)
