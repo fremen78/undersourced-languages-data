@@ -22,7 +22,7 @@ for k in dataset.keys():
     print(df.head())
     full_text = ""
     for it in df.iterrows():
-        text_i = it[1]['text']
-        full_text = full_text + text_i + "\n"  
+        text_i = it[1]['title'] + "\n\n" + it[1]['text'] + "\n\n\n"
+        full_text = full_text + text_i   
     with open("hf_bloom-lm-snk-dataset_" + k + "_text_only.txt", "w") as f:
         f.write(full_text)
