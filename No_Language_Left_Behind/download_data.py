@@ -35,6 +35,6 @@ def download_dataset(lang, isplit):
         f.write(full_text)
 
 
-for lang in ['bam_Latn', 'tzm_Tfng', 'wol_Latn']:
+for lang in ['bam_Latn', 'tzm_Tfng', 'wol_Latn', 'kab_Latn']:
     for spt in ["train", "test", "validation"]:
         download_dataset(lang, spt)
