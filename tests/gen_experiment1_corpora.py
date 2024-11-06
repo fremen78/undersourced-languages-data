@@ -11,7 +11,7 @@ def merge_files(lang, pattern):
 
 merge_files("wol", "../*/*wol*.txt")
 merge_files("snk", "../*/*snk*.txt")
-merge_files("zgh", "../*/*wol*.txt")
+merge_files("zgh", "../*/*zgh*.txt")
 merge_files("zgh", "../*/*tzm*.txt")
 merge_files("zgh", "../*/*kab*.txt")
 merge_files("fuf", "../*/*fuf*.txt")
